@@ -1,14 +1,11 @@
 'use strict';
 const boardButtons = document.querySelectorAll('.cell');
-const markElement = document.querySelector('.mark')
+const markElement = document.querySelectorAll('.mark')
 
-function addMark(mark){
-  mark.textContent = "X"
-}
 
 function buttonClickEvent(){
     console.log('X')
-    addMark(markElement)
+    this.querySelector('.mark').textContent = 'X';
 }
 
 boardButtons.forEach(function(button){
