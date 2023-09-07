@@ -1,8 +1,7 @@
 'use strict';
 const boardButtons = document.querySelectorAll('.cell');
-const markElement = document.querySelectorAll('.mark')
 
-
+function addX(){
 function buttonClickEvent(){
     console.log('X')
     this.querySelector('.mark').textContent = 'X';
@@ -11,3 +10,17 @@ function buttonClickEvent(){
 boardButtons.forEach(function(button){
     button.addEventListener('click', buttonClickEvent)
 })
+}
+
+function addO(){
+    function buttonClickEvent(){
+        console.log('O')
+        this.querySelector('.mark').textContent = 'O';
+    }
+    
+    boardButtons.forEach(function(button){
+        button.addEventListener('click', buttonClickEvent)
+    })
+}
+
+addO()
