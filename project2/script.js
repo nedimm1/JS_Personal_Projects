@@ -1,6 +1,10 @@
 'use strict';
-const boardButtons = document.querySelector('.cell');
+const boardButtons = document.querySelectorAll('.cell');
 
-boardButtons.addEventListener('click', function () {
+function buttonClickEvent(){
     console.log('X')
+}
+
+boardButtons.forEach(function(button){
+    button.addEventListener('click', buttonClickEvent)
 })
