@@ -22,6 +22,9 @@ boardButton1.addEventListener('click', function(){
         boardButton1.textContent = 'X'
         i++
         bButtonOccupied1 = true
+        if(bButtonOccupied1 = true){
+            boardButton1.setAttribute('disabled', 'X')
+        }
     }else if(i == 2){
         boardButton1.textContent = 'O'
         i++
