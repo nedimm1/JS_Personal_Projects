@@ -35,6 +35,21 @@ function checkWinner(){
     if(board.bSpace1 == "X" && board.bSpace2 == "X" && board.bSpace3 == "X"){
        xWins.textContent = 'X Wins'
        console.log('win')
+    }else if(board.bSpace4 == "X" && board.bSpace5 == "X" && board.bSpace6 == "X"){
+        xWins.textContent = 'X Wins'
+        console.log('win')
+    }else if(board.bSpace7 == "X" && board.bSpace8 == "X" && board.bSpace9 == "X"){
+        xWins.textContent = 'X Wins'
+        console.log('win')
+    }else if(board.bSpace1 == "X" && board.bSpace4 == "X" && board.bSpace7 == "X"){
+        xWins.textContent = 'X Wins'
+        console.log('win')
+    }else if(board.bSpace2 == "X" && board.bSpace5 == "X" && board.bSpace8 == "X"){
+        xWins.textContent = 'X Wins'
+        console.log('win')
+    }else if(board.bSpace3 == "X" && board.bSpace6 == "X" && board.bSpace9 == "X"){
+        xWins.textContent = 'X Wins'
+        console.log('win')
     }
     
 }
@@ -334,6 +349,9 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'X')
         }
+        board.bSpace4 = "X";
+        checkWinner()
+
     }else if(i == 2){
         boardButton4.textContent = 'O'
         i++
@@ -341,6 +359,8 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'O')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 3){
         boardButton4.textContent = 'X'
         i++
@@ -348,6 +368,8 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'X')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 4){
         boardButton4.textContent = "O"
         i++
@@ -355,6 +377,8 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'O')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 5){
         boardButton4.textContent = "X"
         i++
@@ -362,6 +386,8 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'X')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 6){
         boardButton4.textContent = "O"
         i++
@@ -369,6 +395,8 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'O')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 7){
         boardButton4.textContent = "X"
         i++
@@ -376,6 +404,8 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'X')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 8){
         boardButton4.textContent = "O"
         i++
@@ -383,12 +413,16 @@ boardButton4.addEventListener('click', function(){
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'O')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }else if(i == 9){
         boardButton4.textContent = 'X'
         bButtonOccupied4 = true
         if(bButtonOccupied4 = true){
             boardButton4.setAttribute('disabled', 'X')
         }
+        board.bSpace4 = "X";
+        checkWinner()
     }
 })
 
@@ -401,6 +435,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'X')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 2){
         boardButton5.textContent = 'O'
         i++
@@ -408,6 +444,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'O')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 3){
         boardButton5.textContent = 'X'
         i++
@@ -415,6 +453,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'X')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 4){
         boardButton5.textContent = "O"
         i++
@@ -422,6 +462,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'O')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 5){
         boardButton5.textContent = "X"
         i++
@@ -429,6 +471,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'X')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 6){
         boardButton5.textContent = "O"
         i++
@@ -436,6 +480,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'O')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 7){
         boardButton5.textContent = "X"
         i++
@@ -443,6 +489,8 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'X')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 8){
         boardButton5.textContent = "O"
         i++
@@ -450,12 +498,16 @@ boardButton5.addEventListener('click', function(){
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'O')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }else if(i == 9){
         boardButton5.textContent = 'X'
         bButtonOccupied5 = true
         if(bButtonOccupied5 = true){
             boardButton5.setAttribute('disabled', 'X')
         }
+        board.bSpace5 = "X";
+        checkWinner()
     }
 })
 
@@ -468,6 +520,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'X')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 2){
         boardButton6.textContent = 'O'
         i++
@@ -475,6 +529,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'O')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 3){
         boardButton6.textContent = 'X'
         i++
@@ -482,6 +538,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'X')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 4){
         boardButton6.textContent = "O"
         i++
@@ -489,6 +547,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'O')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 5){
         boardButton6.textContent = "X"
         i++
@@ -496,6 +556,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'X')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 6){
         boardButton6.textContent = "O"
         i++
@@ -503,6 +565,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'O')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 7){
         boardButton6.textContent = "X"
         i++
@@ -510,6 +574,8 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'X')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 8){
         boardButton6.textContent = "O"
         i++
@@ -517,12 +583,16 @@ boardButton6.addEventListener('click', function(){
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'O')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }else if(i == 9){
         boardButton6.textContent = 'X'
         bButtonOccupied6 = true
         if(bButtonOccupied6 = true){
             boardButton6.setAttribute('disabled', 'X')
         }
+        board.bSpace6 = "X";
+        checkWinner()
     }
 })
 
@@ -535,6 +605,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'X')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 2){
         boardButton7.textContent = 'O'
         i++
@@ -542,6 +614,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'O')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 3){
         boardButton7.textContent = 'X'
         i++
@@ -549,6 +623,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'X')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 4){
         boardButton7.textContent = "O"
         i++
@@ -556,6 +632,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'O')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 5){
         boardButton7.textContent = "X"
         i++
@@ -563,6 +641,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'X')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 6){
         boardButton7.textContent = "O"
         i++
@@ -570,6 +650,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'O')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 7){
         boardButton7.textContent = "X"
         i++
@@ -577,6 +659,8 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'X')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 8){
         boardButton7.textContent = "O"
         i++
@@ -584,12 +668,16 @@ boardButton7.addEventListener('click', function(){
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'O')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }else if(i == 9){
         boardButton7.textContent = 'X'
         bButtonOccupied7 = true
         if(bButtonOccupied7 = true){
             boardButton7.setAttribute('disabled', 'X')
         }
+        board.bSpace7 = "X";
+        checkWinner()
     }
 })
 
@@ -602,6 +690,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'X')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 2){
         boardButton8.textContent = 'O'
         i++
@@ -609,6 +699,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'O')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 3){
         boardButton8.textContent = 'X'
         i++
@@ -616,6 +708,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'X')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 4){
         boardButton8.textContent = "O"
         i++
@@ -623,6 +717,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'O')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 5){
         boardButton8.textContent = "X"
         i++
@@ -630,6 +726,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'X')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 6){
         boardButton8.textContent = "O"
         i++
@@ -637,6 +735,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'O')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 7){
         boardButton8.textContent = "X"
         i++
@@ -644,6 +744,8 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'X')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 8){
         boardButton8.textContent = "O"
         i++
@@ -651,12 +753,16 @@ boardButton8.addEventListener('click', function(){
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'O')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }else if(i == 9){
         boardButton8.textContent = 'X'
         bButtonOccupied8 = true;
         if(bButtonOccupied8 = true){
             boardButton8.setAttribute('disabled', 'X')
         }
+        board.bSpace8 = "X";
+        checkWinner()
     }
 })
 
@@ -669,6 +775,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'X')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 2){
         boardButton9.textContent = 'O'
         i++
@@ -676,6 +784,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'O')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 3){
         boardButton9.textContent = 'X'
         i++
@@ -683,6 +793,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'X')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 4){
         boardButton9.textContent = "O"
         i++
@@ -690,6 +802,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'O')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 5){
         boardButton9.textContent = "X"
         i++
@@ -697,6 +811,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'X')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 6){
         boardButton9.textContent = "O"
         i++
@@ -704,6 +820,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'O')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 7){
         boardButton9.textContent = "X"
         i++
@@ -711,6 +829,8 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'X')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 8){
         boardButton9.textContent = "O"
         i++
@@ -718,12 +838,16 @@ boardButton9.addEventListener('click', function(){
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'O')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }else if(i == 9){
         boardButton9.textContent = 'X'
         bButtonOccupied9 = true
         if(bButtonOccupied9 = true){
             boardButton9.setAttribute('disabled', 'X')
         }
+        board.bSpace9 = "X";
+        checkWinner()
     }
 })
 
