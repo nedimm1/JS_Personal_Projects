@@ -13,6 +13,7 @@ let xPlace = document.querySelector('.PX')
 let oPlace = document.querySelector('.PO')
 let xWins = document.querySelector('.XW')
 let oWins = document.querySelector('.OW')
+let noWin = document.querySelector(".draw")
 let bButtonOccupied1, bButtonOccupied2, bButtonOccupied3, bButtonOccupied4,
     bButtonOccupied5, bButtonOccupied6, bButtonOccupied7, bButtonOccupied8, bButtonOccupied9;
 let i = 1;
@@ -30,56 +31,84 @@ const board = {
     bSpace9: null,
 }
 
+function disableButtons() {
+    boardButton1.setAttribute('disabled', "")
+    boardButton2.setAttribute('disabled', "")
+    boardButton3.setAttribute('disabled', "")
+    boardButton4.setAttribute('disabled', "")
+    boardButton5.setAttribute('disabled', "")
+    boardButton6.setAttribute('disabled', "")
+    boardButton7.setAttribute('disabled', "")
+    boardButton8.setAttribute('disabled', "")
+    boardButton9.setAttribute('disabled', "")
+}
 
 function checkWinner() {
     if (board.bSpace1 == "X" && board.bSpace2 == "X" && board.bSpace3 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace4 == "X" && board.bSpace5 == "X" && board.bSpace6 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace7 == "X" && board.bSpace8 == "X" && board.bSpace9 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace1 == "X" && board.bSpace4 == "X" && board.bSpace7 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace2 == "X" && board.bSpace5 == "X" && board.bSpace8 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace3 == "X" && board.bSpace6 == "X" && board.bSpace9 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace1 == "X" && board.bSpace5 == "X" && board.bSpace9 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     } else if (board.bSpace3 == "X" && board.bSpace5 == "X" && board.bSpace7 == "X") {
         xWins.textContent = 'X Wins'
         console.log('win')
+        disableButtons()
     }else if (board.bSpace1 == "O" && board.bSpace2 == "O" && board.bSpace3 == "O") {
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     } else if (board.bSpace4 == "O" && board.bSpace5 == "O" && board.bSpace6 == "O") {
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     } else if (board.bSpace7 == "O" && board.bSpace8 == "O" && board.bSpace9 == "O") {
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     } else if (board.bSpace1 == "O" && board.bSpace4 == "O" && board.bSpace7 == "O") {
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     } else if (board.bSpace2 == "O" && board.bSpace5 == "O" && board.bSpace8 == "O") {
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     } else if (board.bSpace3 == "O" && board.bSpace6 == "O" && board.bSpace9 == "O") {
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     }else if(board.bSpace3 == "O" && board.bSpace5 == "O" && board.bSpace7 == "O"){
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
     }else if(board.bSpace1 == "O" && board.bSpace5 == "O" && board.bSpace9 == "O"){
         oWins.textContent = "O wins"
         console.log("OWin")
+        disableButtons()
+    }else if(xWins == "" && oWins == ""){
     }
 
 }
