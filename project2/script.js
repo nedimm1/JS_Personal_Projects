@@ -14,10 +14,45 @@ let oPlace = document.querySelector('.PO')
 let xWins = document.querySelector('.XW')
 let oWins = document.querySelector('.OW')
 let noWin = document.querySelector(".draw")
+let RButton = document.getElementById("refreshButton")
 let bButtonOccupied1, bButtonOccupied2, bButtonOccupied3, bButtonOccupied4,
     bButtonOccupied5, bButtonOccupied6, bButtonOccupied7, bButtonOccupied8, bButtonOccupied9;
 let i = 1;
 
+RButton.addEventListener('click', function(){
+    board.bSpace1 = null;
+    board.bSpace2 = null
+    board.bSpace3 = null
+    board.bSpace4 = null
+    board.bSpace5 = null
+    board.bSpace6 = null
+    board.bSpace7 = null
+    board.bSpace8 = null
+    board.bSpace9 = null
+    console.log(board)
+    boardButton1.removeAttribute('disabled')
+    boardButton2.removeAttribute('disabled')
+    boardButton3.removeAttribute('disabled')
+    boardButton4.removeAttribute('disabled')
+    boardButton5.removeAttribute('disabled')
+    boardButton6.removeAttribute('disabled')
+    boardButton7.removeAttribute('disabled')
+    boardButton8.removeAttribute('disabled')
+    boardButton9.removeAttribute('disabled')
+
+    boardButton1.textContent = ""
+    boardButton2.textContent = ""
+    boardButton3.textContent = ""
+    boardButton4.textContent = ""
+    boardButton5.textContent = ""
+    boardButton6.textContent = ""
+    boardButton7.textContent = ""
+    boardButton8.textContent = ""
+    boardButton9.textContent = ""
+
+    xWins.textContent = ''
+    oWins.textContent = ''
+})
 
 const board = {
     bSpace1: null,
@@ -42,6 +77,8 @@ function disableButtons() {
     boardButton8.setAttribute('disabled', "")
     boardButton9.setAttribute('disabled', "")
 }
+
+
 
 function checkWinner() {
     if (board.bSpace1 == "X" && board.bSpace2 == "X" && board.bSpace3 == "X") {
