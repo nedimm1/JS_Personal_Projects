@@ -60,6 +60,7 @@ RButton.addEventListener('click', function(){
 
     xWins.textContent = ''
     oWins.textContent = ''
+    noWin.textContent = ''
 })
 
 const board = {
@@ -185,11 +186,11 @@ function checkWinner() {
         disableButtons()
         score1++
         scoreNum1.textContent = score1;
-    }else if(xWins == "" && oWins == ""){
+    }else if(i > 9){
+        noWin.textContent = "draw"
     }
 
 }
-
 
 boardButton1.addEventListener('click', function () {
     console.log(i)
@@ -276,7 +277,7 @@ boardButton1.addEventListener('click', function () {
         if (bButtonOccupied1 = true) {
             boardButton1.setAttribute('disabled', 'X')
         }
-
+        i++
         board.bSpace1 = "X";
         checkWinner()
 
@@ -374,6 +375,7 @@ boardButton2.addEventListener('click', function () {
         if (bButtonOccupied2 = true) {
             boardButton2.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace2 = "X";
         checkWinner()
 
@@ -470,6 +472,7 @@ boardButton3.addEventListener('click', function () {
         if (bButtonOccupied3 = true) {
             boardButton3.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace3 = "X";
         checkWinner()
 
@@ -557,6 +560,7 @@ boardButton4.addEventListener('click', function () {
         if (bButtonOccupied4 = true) {
             boardButton4.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace4 = "X";
         checkWinner()
     }
@@ -642,6 +646,7 @@ boardButton5.addEventListener('click', function () {
         if (bButtonOccupied5 = true) {
             boardButton5.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace5 = "X";
         checkWinner()
     }
@@ -727,6 +732,7 @@ boardButton6.addEventListener('click', function () {
         if (bButtonOccupied6 = true) {
             boardButton6.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace6 = "X";
         checkWinner()
     }
@@ -812,6 +818,7 @@ boardButton7.addEventListener('click', function () {
         if (bButtonOccupied7 = true) {
             boardButton7.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace7 = "X";
         checkWinner()
     }
@@ -897,8 +904,10 @@ boardButton8.addEventListener('click', function () {
         if (bButtonOccupied8 = true) {
             boardButton8.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace8 = "X";
         checkWinner()
+        
     }
 })
 
@@ -982,8 +991,10 @@ boardButton9.addEventListener('click', function () {
         if (bButtonOccupied9 = true) {
             boardButton9.setAttribute('disabled', 'X')
         }
+        i++
         board.bSpace9 = "X";
         checkWinner()
+        
     }
 })
 
